@@ -1,0 +1,4 @@
+# Optional isolated training environment. Not needed for Unity or offline runtime.
+ultralytics==8.3.200
+tensorflow==2.19.0
+numpy==2.1.3

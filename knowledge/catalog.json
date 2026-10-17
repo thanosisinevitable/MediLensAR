@@ -1,0 +1,808 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "india-expanded-ui-2026-09-21",
+  "synthetic": false,
+  "sources": [
+    {
+      "id": "pfizer-viagra-652",
+      "name": "Pfizer prescribing information",
+      "recordId": "652, sections 3 and 11",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=652",
+      "version": "revised 2017-12",
+      "verificationDate": "2026-09-21",
+      "verificationStatus": "SOURCE_CHECKED_NOT_CLINICALLY_REVIEWED"
+    },
+    {
+      "id": "dailymed-nitrostat",
+      "name": "DailyMed NITROSTAT label",
+      "recordId": "9a52da75-d0af-4237-96c0-0b12adfa8636; sections 3, 4.1, 7.1, 11",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9a52da75-d0af-4237-96c0-0b12adfa8636",
+      "version": "revised 2023-02",
+      "verificationDate": "2026-09-21",
+      "verificationStatus": "SOURCE_CHECKED_NOT_CLINICALLY_REVIEWED"
+    },
+    {
+      "id": "kenvue-tylenol-liquid",
+      "name": "TYLENOL manufacturer product page",
+      "recordId": "extra-strength-liquid-gels",
+      "url": "https://www.tylenol.com/products/headache-pain-relief/tylenol-extra-strength-liquid-gels",
+      "version": "unversioned; accessed 2026-09-21",
+      "verificationDate": "2026-09-21",
+      "verificationStatus": "SOURCE_CHECKED_NOT_CLINICALLY_REVIEWED"
+    },
+    {
+      "id": "microlabs-dolo-india",
+      "name": "Micro Labs fever & pain management portfolio / NPPA Dolo record",
+      "recordId": "Dolo-650; Paracetamol 650 mg",
+      "url": "https://www.microlabsltd.com/therapy/fever-pain-management",
+      "version": "accessed 2026-09-21",
+      "verificationDate": "2026-09-21",
+      "verificationStatus": "SOURCE_CHECKED_NOT_CLINICALLY_REVIEWED"
+    },
+    {
+      "id": "haleon-crocin-india",
+      "name": "Haleon HealthPartner India Crocin product pages",
+      "recordId": "Crocin Advance and Crocin 650",
+      "url": "https://www.haleonhealthpartner.com/en-in/pain-relief/brands/crocin/products/",
+      "version": "accessed 2026-09-21",
+      "verificationDate": "2026-09-21",
+      "verificationStatus": "SOURCE_CHECKED_NOT_CLINICALLY_REVIEWED"
+    },
+    {
+      "id": "sunpharma-india-products",
+      "name": "Sun Pharmaceutical Industries India Products",
+      "recordId": "India Products list; selected branded formulations",
+      "url": "https://sunpharma.com/india-products/",
+      "version": "accessed 2026-09-21",
+      "verificationDate": "2026-09-21",
+      "verificationStatus": "SOURCE_CHECKED_NOT_CLINICALLY_REVIEWED"
+    }
+  ],
+  "medicines": [
+    {
+      "id": "viagra-25mg",
+      "name": "VIAGRA 25 mg",
+      "form": "film-coated tablet",
+      "sourceId": "pfizer-viagra-652",
+      "aliases": [
+        "VIAGRA"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "sildenafil",
+          "name": "SILDENAFIL",
+          "strength": "25",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "viagra-50mg",
+      "name": "VIAGRA 50 mg",
+      "form": "film-coated tablet",
+      "sourceId": "pfizer-viagra-652",
+      "aliases": [
+        "VIAGRA"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "sildenafil",
+          "name": "SILDENAFIL",
+          "strength": "50",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "viagra-100mg",
+      "name": "VIAGRA 100 mg",
+      "form": "film-coated tablet",
+      "sourceId": "pfizer-viagra-652",
+      "aliases": [
+        "VIAGRA"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "sildenafil",
+          "name": "SILDENAFIL",
+          "strength": "100",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "nitrostat-0p3mg",
+      "name": "NITROSTAT 0.3 mg",
+      "form": "sublingual tablet",
+      "sourceId": "dailymed-nitrostat",
+      "aliases": [
+        "NITROSTAT"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "nitroglycerin",
+          "name": "NITROGLYCERIN",
+          "strength": "0.3",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "nitrostat-0p4mg",
+      "name": "NITROSTAT 0.4 mg",
+      "form": "sublingual tablet",
+      "sourceId": "dailymed-nitrostat",
+      "aliases": [
+        "NITROSTAT"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "nitroglycerin",
+          "name": "NITROGLYCERIN",
+          "strength": "0.4",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "nitrostat-0p6mg",
+      "name": "NITROSTAT 0.6 mg",
+      "form": "sublingual tablet",
+      "sourceId": "dailymed-nitrostat",
+      "aliases": [
+        "NITROSTAT"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "nitroglycerin",
+          "name": "NITROGLYCERIN",
+          "strength": "0.6",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "tylenol-extra-liquid-500mg",
+      "name": "TYLENOL Extra Strength Liquid Gels",
+      "form": "liquid gel",
+      "sourceId": "kenvue-tylenol-liquid",
+      "aliases": [
+        "TYLENOL"
+      ],
+      "requiredTokens": [
+        "EXTRA STRENGTH",
+        "LIQUID GELS"
+      ],
+      "excludedTokens": [
+        "PM",
+        "COLD",
+        "FLU",
+        "SINUS",
+        "MULTI",
+        "NIGHT"
+      ],
+      "ingredients": [
+        {
+          "id": "acetaminophen",
+          "name": "ACETAMINOPHEN",
+          "strength": "500",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "dolo-650",
+      "name": "Dolo-650",
+      "form": "tablet",
+      "sourceId": "microlabs-dolo-india",
+      "aliases": [
+        "DOLO 650",
+        "DOLO-650"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "COLD",
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "acetaminophen",
+          "name": "PARACETAMOL",
+          "strength": "650",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "crocin-advance-500",
+      "name": "Crocin Advance 500 mg",
+      "form": "tablet",
+      "sourceId": "haleon-crocin-india",
+      "aliases": [
+        "CROCIN ADVANCE"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PAIN RELIEF",
+        "CHILDREN",
+        "SUSPENSION"
+      ],
+      "ingredients": [
+        {
+          "id": "acetaminophen",
+          "name": "PARACETAMOL",
+          "strength": "500",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "crocin-650",
+      "name": "Crocin 650",
+      "form": "tablet",
+      "sourceId": "haleon-crocin-india",
+      "aliases": [
+        "CROCIN 650"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PAIN RELIEF",
+        "CHILDREN",
+        "SUSPENSION"
+      ],
+      "ingredients": [
+        {
+          "id": "acetaminophen",
+          "name": "PARACETAMOL",
+          "strength": "650",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "pantocid-20mg",
+      "name": "PANTOCID 20 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "PANTOCID"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PANTOCID D",
+        "PANTOCID DSR",
+        "PANTOCID HP",
+        "PANTOCID IT",
+        "PANTOCID L",
+        "PANTOCID IV"
+      ],
+      "ingredients": [
+        {
+          "id": "pantoprazole",
+          "name": "PANTOPRAZOLE",
+          "strength": "20",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "pantocid-40mg",
+      "name": "PANTOCID 40 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "PANTOCID"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PANTOCID D",
+        "PANTOCID DSR",
+        "PANTOCID HP",
+        "PANTOCID IT",
+        "PANTOCID L",
+        "PANTOCID IV"
+      ],
+      "ingredients": [
+        {
+          "id": "pantoprazole",
+          "name": "PANTOPRAZOLE",
+          "strength": "40",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rozavel-5mg",
+      "name": "ROZAVEL 5 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROZAVEL"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "D ROZAVEL",
+        "ROZAVEL A",
+        "ROZAVEL EZ",
+        "ROZAVEL F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "5",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rozavel-10mg",
+      "name": "ROZAVEL 10 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROZAVEL"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "D ROZAVEL",
+        "ROZAVEL A",
+        "ROZAVEL EZ",
+        "ROZAVEL F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "10",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rozavel-20mg",
+      "name": "ROZAVEL 20 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROZAVEL"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "D ROZAVEL",
+        "ROZAVEL A",
+        "ROZAVEL EZ",
+        "ROZAVEL F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "20",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rozavel-40mg",
+      "name": "ROZAVEL 40 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROZAVEL"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "D ROZAVEL",
+        "ROZAVEL A",
+        "ROZAVEL EZ",
+        "ROZAVEL F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "40",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rosuvas-5mg",
+      "name": "ROSUVAS 5 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROSUVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "ROSUVAS CV",
+        "ROSUVAS D",
+        "ROSUVAS F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "5",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rosuvas-10mg",
+      "name": "ROSUVAS 10 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROSUVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "ROSUVAS CV",
+        "ROSUVAS D",
+        "ROSUVAS F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "10",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rosuvas-20mg",
+      "name": "ROSUVAS 20 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROSUVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "ROSUVAS CV",
+        "ROSUVAS D",
+        "ROSUVAS F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "20",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rosuvas-40mg",
+      "name": "ROSUVAS 40 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "ROSUVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "ROSUVAS CV",
+        "ROSUVAS D",
+        "ROSUVAS F"
+      ],
+      "ingredients": [
+        {
+          "id": "rosuvastatin",
+          "name": "ROSUVASTATIN",
+          "strength": "40",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "storvas-5mg",
+      "name": "STORVAS 5 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "STORVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "atorvastatin",
+          "name": "ATORVASTATIN",
+          "strength": "5",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "storvas-10mg",
+      "name": "STORVAS 10 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "STORVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "atorvastatin",
+          "name": "ATORVASTATIN",
+          "strength": "10",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "storvas-20mg",
+      "name": "STORVAS 20 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "STORVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "atorvastatin",
+          "name": "ATORVASTATIN",
+          "strength": "20",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "storvas-40mg",
+      "name": "STORVAS 40 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "STORVAS"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "atorvastatin",
+          "name": "ATORVASTATIN",
+          "strength": "40",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "covance-25mg",
+      "name": "COVANCE 25 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "COVANCE"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "COVANCE AT",
+        "COVANCE D"
+      ],
+      "ingredients": [
+        {
+          "id": "losartan",
+          "name": "LOSARTAN",
+          "strength": "25",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "covance-50mg",
+      "name": "COVANCE 50 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "COVANCE"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "COVANCE AT",
+        "COVANCE D"
+      ],
+      "ingredients": [
+        {
+          "id": "losartan",
+          "name": "LOSARTAN",
+          "strength": "50",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "dabigo-75mg",
+      "name": "DABIGO 75 mg",
+      "form": "capsule",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "DABIGO"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "dabigatran",
+          "name": "DABIGATRAN",
+          "strength": "75",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "dabigo-110mg",
+      "name": "DABIGO 110 mg",
+      "form": "capsule",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "DABIGO"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "dabigatran",
+          "name": "DABIGATRAN",
+          "strength": "110",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "dabigo-150mg",
+      "name": "DABIGO 150 mg",
+      "form": "capsule",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "DABIGO"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "dabigatran",
+          "name": "DABIGATRAN",
+          "strength": "150",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rivaflo-10mg",
+      "name": "RIVAFLO 10 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "RIVAFLO"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "rivaroxaban",
+          "name": "RIVAROXABAN",
+          "strength": "10",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rivaflo-15mg",
+      "name": "RIVAFLO 15 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "RIVAFLO"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "rivaroxaban",
+          "name": "RIVAROXABAN",
+          "strength": "15",
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "rivaflo-20mg",
+      "name": "RIVAFLO 20 mg",
+      "form": "tablet",
+      "sourceId": "sunpharma-india-products",
+      "aliases": [
+        "RIVAFLO"
+      ],
+      "requiredTokens": [],
+      "excludedTokens": [
+        "PLUS",
+        "COMBINATION"
+      ],
+      "ingredients": [
+        {
+          "id": "rivaroxaban",
+          "name": "RIVAROXABAN",
+          "strength": "20",
+          "unit": "mg"
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "nitroglycerin-sildenafil",
+      "left": "nitroglycerin",
+      "right": "sildenafil",
+      "severity": "CONTRAINDICATED",
+      "explanation": "The product label contraindicates this combination because of the risk of a severe fall in blood pressure. Ask a pharmacist or prescriber to review your medicines.",
+      "sourceId": "dailymed-nitrostat"
+    }
+  ]
+}

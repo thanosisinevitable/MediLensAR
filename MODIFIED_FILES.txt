@@ -1,0 +1,33 @@
+MediLens Android refresh — 2026-09-21
+
+Main changes
+- Faster OCR sampling (single request at a time remains enforced).
+- Multi-block OCR grouping so brand / ingredient / strength can be read when ML Kit splits them into nearby blocks.
+- Resolved AR medicine cards are visually held for ~4.2 seconds to prevent rapid flicker after temporary OCR misses.
+- Unresolved OCR regions use subtle corner markers instead of large flashing cards.
+- Larger, high-contrast AR cards with medicine name and composition.
+- Camera-first dark glass UI overhaul with a single gear panel for My Plan, Supported Medicines, scanning help, and privacy controls.
+- Explicit ARCore imports fix the Track name collision.
+- Expanded source-checked knowledge asset from 7 to 32 formulations, including selected Indian-market brands.
+- Paracetamol / acetaminophen synonym handling for Indian labels.
+
+Files modified
+app/src/main/java/org/medilens/MainActivity.java
+app/src/main/java/org/medilens/core/Config.java
+app/src/main/java/org/medilens/core/Resolver.java
+app/src/main/java/org/medilens/core/Tracker.java
+app/src/main/java/org/medilens/scan/NativeScanner.java
+app/src/main/java/org/medilens/ui/ScanOverlay.java
+app/src/main/java/org/medilens/ui/Ui.java
+knowledge/catalog.json
+app/src/main/assets/knowledge.db
+app/src/main/assets/knowledge.sha256
+tests/test_knowledge.py
+README.md
+docs/LIMITATIONS.md
+docs/STATUS.md
+
+Verification
+- tools/verify.py: 61 Java-domain tests passed; 49 Python tests passed.
+- Java syntax check: 16 files, 0 errors.
+- Full Android Gradle linking/build could not be run in the sandbox because the custom wrapper bootstrap requires network access to raw.githubusercontent.com.

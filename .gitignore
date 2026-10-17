@@ -1,0 +1,50 @@
+# Android / Gradle output and machine-specific settings
+.gradle/
+.local/
+**/build/
+local.properties
+.cxx/
+.externalNativeBuild/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.hprof
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+
+# Credentials and signing material
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+signing.properties
+credentials.json
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# macOS metadata and temporary files
+.DS_Store
+.AppleDouble/
+.LSOverride
+__MACOSX/
+._*
+*.swp
+*.swo
+*~
+gradle/wrapper/wrapper.download

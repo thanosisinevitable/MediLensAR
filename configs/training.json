@@ -1,0 +1,1 @@
+{"architecture":"yolov8n.yaml","epochs":100,"imgsz":320,"batch":8,"seed":42,"workers":0,"device":"cpu"}

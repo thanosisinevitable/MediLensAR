@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=ON;
+PRAGMA user_version=1;
+CREATE TABLE Metadata(key TEXT PRIMARY KEY, value TEXT NOT NULL);
+CREATE TABLE Source(id TEXT PRIMARY KEY, name TEXT NOT NULL, record_id TEXT NOT NULL, url TEXT NOT NULL, version TEXT NOT NULL, checked_at TEXT NOT NULL, status TEXT NOT NULL);
+CREATE TABLE Medicine(id TEXT PRIMARY KEY, name TEXT NOT NULL, form TEXT NOT NULL, source_id TEXT NOT NULL REFERENCES Source(id), required_tokens TEXT NOT NULL, excluded_tokens TEXT NOT NULL);
+CREATE TABLE Alias(medicine_id TEXT NOT NULL REFERENCES Medicine(id), value TEXT NOT NULL, PRIMARY KEY(medicine_id,value));
+CREATE INDEX Alias_lookup ON Alias(value);
+CREATE TABLE Ingredient(id TEXT PRIMARY KEY, name TEXT NOT NULL);
+CREATE TABLE MedicineIngredient(medicine_id TEXT NOT NULL REFERENCES Medicine(id), ingredient_id TEXT NOT NULL REFERENCES Ingredient(id), strength TEXT NOT NULL, unit TEXT NOT NULL CHECK(unit IN ('mg','mcg','g')), source_id TEXT NOT NULL REFERENCES Source(id), PRIMARY KEY(medicine_id,ingredient_id));
+CREATE TABLE Interaction(id TEXT PRIMARY KEY, ingredient_a TEXT NOT NULL REFERENCES Ingredient(id), ingredient_b TEXT NOT NULL REFERENCES Ingredient(id), severity TEXT NOT NULL CHECK(severity IN ('CONTRAINDICATED','MAJOR','MODERATE','MINOR')), explanation TEXT NOT NULL, source_id TEXT NOT NULL REFERENCES Source(id), CHECK(ingredient_a<ingredient_b), UNIQUE(ingredient_a,ingredient_b));

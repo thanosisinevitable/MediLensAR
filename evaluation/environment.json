@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-21",
+  "javaCompiler": "17.0.20 via jdk.compiler module",
+  "androidSdkAvailable": false,
+  "gradleAvailable": false,
+  "connectedPhone": false,
+  "apkGenerated": false,
+  "bootstrapAttempt": "Exited before the official wrapper JAR was retrieved; Android compilation did not start",
+  "verificationScope": "Core Java execution, Java syntax parsing and Python/SQLite tests only"
+}

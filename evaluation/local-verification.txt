@@ -1,0 +1,124 @@
+$ java -m jdk.compiler/com.sun.tools.javac.Main -d /mnt/data/medilens_fix/.local/classes /mnt/data/medilens_fix/app/src/main/java/org/medilens/core/DoseEngine.java /mnt/data/medilens_fix/app/src/main/java/org/medilens/core/Resolver.java /mnt/data/medilens_fix/app/src/main/java/org/medilens/core/Coordinates.java /mnt/data/medilens_fix/app/src/main/java/org/medilens/core/Domain.java /mnt/data/medilens_fix/app/src/main/java/org/medilens/core/Tracker.java /mnt/data/medilens_fix/app/src/main/java/org/medilens/core/Config.java /mnt/data/medilens_fix/app/src/main/java/org/medilens/core/SafetyEngine.java /mnt/data/medilens_fix/tests/CoreTests.java
+
+$ java -cp /mnt/data/medilens_fix/.local/classes CoreTests
+PASS normalize casing/spacing
+PASS normalize punctuation
+PASS preserve decimal strength
+PASS exact evidence resolves
+PASS case-insensitive evidence
+PASS unsupported brand rejected
+PASS substring brand rejected
+PASS OCR corruption not overconfident
+PASS missing strength rejected
+PASS missing ingredient rejected
+PASS wrong strength rejected
+PASS extra strength rejected
+PASS wrong unit rejected
+PASS conflicting ingredient rejected
+PASS excluded variant rejected
+PASS two brands in region rejected
+PASS combination exact composition
+PASS combination missing ingredient
+PASS ambiguous catalog rejected
+PASS required variant
+PASS empty text unresolved
+PASS IoU identical
+PASS IoU disjoint
+PASS invalid boxes rejected
+PASS three observations required
+PASS track ID persists
+PASS temporary loss invalidates identity
+PASS stale results discarded
+PASS future observation discarded
+PASS stale labels expire
+PASS unsupported breaks consensus
+PASS long gap resets consensus
+PASS separate packages get separate IDs
+PASS duplicate ingredient
+PASS unknown is no data
+PASS DDI canonical reverse pair
+PASS combination all pairs evaluated
+PASS known DDI before unknown
+PASS unresolved excluded from clinical alerts
+PASS same med separate packages duplicate
+PASS alerts debounce and expire
+PASS critical interaction immediate
+PASS alert deduplication
+PASS dose unknown
+PASS dose upcoming
+PASS dose early boundary inclusive
+PASS dose due
+PASS dose late boundary inclusive
+PASS dose overdue
+PASS dose taken persists
+PASS dose skipped persists
+PASS timezone conversion
+PASS DST gap rejected
+PASS DST overlap rejected
+PASS OCR rotation 0
+PASS OCR rotation 90
+PASS OCR rotation 180
+PASS OCR rotation 270
+PASS invalid rotation
+PASS affine mapping
+PASS complete synthetic perception to safety
+RESULT 61 passed, 0 failed
+
+$ java tools/ParseJava.java
+Java syntax: 16 files, 0 errors. Android API linking not checked.
+
+$ /opt/pyvenv/bin/python -m unittest discover -s tests -p test_*.py -v
+test_box_outside (test_dataset.DatasetTests.test_box_outside) ... ok
+test_condition_holdout (test_dataset.DatasetTests.test_condition_holdout) ... ok
+test_duplicate_ids (test_dataset.DatasetTests.test_duplicate_ids) ... ok
+test_empty_dataset (test_dataset.DatasetTests.test_empty_dataset) ... ok
+test_exact_duplicate_hash_group (test_dataset.DatasetTests.test_exact_duplicate_hash_group) ... ok
+test_instance_atomicity (test_dataset.DatasetTests.test_instance_atomicity) ... ok
+test_leakage_audit (test_dataset.DatasetTests.test_leakage_audit) ... ok
+test_missing_image_rejected (test_dataset.DatasetTests.test_missing_image_rejected) ... ok
+test_mixed_scene_holdout (test_dataset.DatasetTests.test_mixed_scene_holdout) ... ok
+test_nan_box (test_dataset.DatasetTests.test_nan_box) ... ok
+test_one_class_enforced (test_dataset.DatasetTests.test_one_class_enforced) ... ok
+test_open_set (test_dataset.DatasetTests.test_open_set) ... ok
+test_path_traversal (test_dataset.DatasetTests.test_path_traversal) ... ok
+test_reproducible_split (test_dataset.DatasetTests.test_reproducible_split) ... ok
+test_session_atomicity (test_dataset.DatasetTests.test_session_atomicity) ... ok
+test_too_few_groups (test_dataset.DatasetTests.test_too_few_groups) ... ok
+test_transitive_group (test_dataset.DatasetTests.test_transitive_group) ... ok
+test_unknown_train_rejected (test_dataset.DatasetTests.test_unknown_train_rejected) ... ok
+test_valid_metadata (test_dataset.DatasetTests.test_valid_metadata) ... ok
+test_yolo_export_normalized_and_no_stale_files (test_dataset.DatasetTests.test_yolo_export_normalized_and_no_stale_files) ... ok
+test_false_confident_rate (test_evaluate.EvaluationTests.test_false_confident_rate) ... ok
+test_id_switch (test_evaluate.EvaluationTests.test_id_switch) ... ok
+test_known_correct (test_evaluate.EvaluationTests.test_known_correct) ... ok
+test_known_wrong_not_success (test_evaluate.EvaluationTests.test_known_wrong_not_success) ... ok
+test_nan_rejected (test_evaluate.EvaluationTests.test_nan_rejected) ... ok
+test_negative_latency_rejected (test_evaluate.EvaluationTests.test_negative_latency_rejected) ... ok
+test_no_fake_empty_metrics (test_evaluate.EvaluationTests.test_no_fake_empty_metrics) ... ok
+test_quantiles (test_evaluate.EvaluationTests.test_quantiles) ... ok
+test_tracking_session_isolation (test_evaluate.EvaluationTests.test_tracking_session_isolation) ... ok
+test_zero_failures_still_uncertain (test_evaluate.EvaluationTests.test_zero_failures_still_uncertain) ... ok
+test_alias_lookup (test_knowledge.KnowledgeTests.test_alias_lookup) ... ok
+test_canonical_pair_order (test_knowledge.KnowledgeTests.test_canonical_pair_order) ... ok
+test_checksum (test_knowledge.KnowledgeTests.test_checksum) ... ok
+test_expanded_formulations (test_knowledge.KnowledgeTests.test_expanded_formulations) ... ok
+test_foreign_keys (test_knowledge.KnowledgeTests.test_foreign_keys) ... ok
+test_ingredient_join (test_knowledge.KnowledgeTests.test_ingredient_join) ... ok
+test_integrity (test_knowledge.KnowledgeTests.test_integrity) ... ok
+test_interaction_has_provenance (test_knowledge.KnowledgeTests.test_interaction_has_provenance) ... ok
+test_missing_source_rejected (test_knowledge.KnowledgeTests.test_missing_source_rejected) ... ok
+test_no_synthetic_records (test_knowledge.KnowledgeTests.test_no_synthetic_records) ... ok
+test_provenance_not_overstated (test_knowledge.KnowledgeTests.test_provenance_not_overstated) ... ok
+test_source_json_matches_asset (test_knowledge.KnowledgeTests.test_source_json_matches_asset) ... ok
+test_source_urls_dates_and_versions (test_knowledge.KnowledgeTests.test_source_urls_dates_and_versions) ... ok
+test_sources_for_every_composition (test_knowledge.KnowledgeTests.test_sources_for_every_composition) ... ok
+test_sql_parameters_do_not_execute (test_knowledge.KnowledgeTests.test_sql_parameters_do_not_execute) ... ok
+test_transaction_rollback (test_knowledge.KnowledgeTests.test_transaction_rollback) ... ok
+test_unique_alias_scope (test_knowledge.KnowledgeTests.test_unique_alias_scope) ... ok
+test_unknown_interaction_no_row (test_knowledge.KnowledgeTests.test_unknown_interaction_no_row) ... ok
+test_version (test_knowledge.KnowledgeTests.test_version) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.042s
+
+OK
